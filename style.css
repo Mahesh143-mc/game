@@ -6,7 +6,7 @@
 }
 
 body{
-    color: var(--bg-color);
+    color: #ffffff;;
 }
 
 .top-container{
@@ -112,8 +112,8 @@ nav ul li a:hover{
     border: none;
     margin-top: 20px;
     margin-bottom: 10px;
-    transition: background 0.3s;
-   
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .main-btn{
@@ -124,7 +124,6 @@ nav ul li a:hover{
     background: #f1ee1f;
     color: black;
     border: #646060 solid 1px; 
-    transform: translateY(-5px);
 }
 
 .sub-container{
@@ -243,7 +242,7 @@ p,a{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 690px;
+    height: 700px;
     max-height: 1000px;
     flex-direction: column;
     position: relative;
@@ -276,10 +275,12 @@ p,a{
 
 .game-container{
     width: 50%;
+    height: 500px;
     backdrop-filter: blur(10px);
     padding: 20px;
     border: #ee9292 solid 2px;
     position: relative;
+    overflow: hidden;
 }
 
 .inner-container{
@@ -316,8 +317,12 @@ p,a{
     overflow: hidden;
 }
 
+#start-game{
+    transition: transform 1s;
+}
+
 .player{
-    background:linear-gradient(#fff, #c5e72c);
+    background:linear-gradient(#fff, #e72c2c);
     width: 30%;
     height: 200px;
     border-radius: 20px;
@@ -339,11 +344,13 @@ p,a{
 
 .set-value{
     justify-content: center;
+    align-items: center;
 }
 
 .num-col-1 h2{
-    font-size: 1em;
-    padding: 10px;
+    font-size: 1.2em;
+    padding: 0 10px;
+    color: #fff;
 }
 
 .num-col-1 input{
@@ -356,15 +363,51 @@ p,a{
 }
 
 .start-btn{
+    margin: 0;
+    padding:0 ;
     flex-direction: column;
 }
 
-.start-btn p{
+.num-col-1 p{
     color:#2370c9;
 }
 
+/*playing games*/
 
+.game{
+    position: relative;
+    top:-400px;
+    left: 0px;
+    transform: translateX(600px);
+}
 
+#playing-game{
+    transition: transform 1s;
+}
+
+.game h5{
+    color: #fff;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 20px;
+}
+
+.round{
+    justify-content: space-around;
+}
+
+.num-col-1 h3{
+    
+    font-size: 1.2em;
+}
+
+.num-col-1 input{
+    width: 30%;
+    height: 40px;
+    text-align: center;
+}
 
 
 
@@ -393,5 +436,9 @@ p,a{
 
     .num-col-1 img{
         height: 90px;
+    }
+
+    .game{
+        top: -350px;
     }
 }
