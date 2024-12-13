@@ -277,7 +277,7 @@ p,a{
 .game-container{
     width: 50%;
     height: 600px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     padding: 20px;
     border: #ee9292 solid 2px;
     position: relative;
@@ -390,13 +390,14 @@ p,a{
 
 .num-col-1 p{
     color:#2370c9;
+    cursor: pointer;
 }
 
 /*playing games*/
 
 .user-playing{
     position: relative;
-    top:-440px;
+    top:-420px;
     left: 0px;
     transform: translateX(600px);
 }
@@ -429,9 +430,13 @@ p,a{
     text-align: center;
 }
 
+.game-rules p{
+    color: #2370c9;
+    font-size: 1rem;
+}
 /* wining moment */
 
-.show-winning,.show-lose,.win-game,.lose-game{
+.show-winning,.show-lose,.win-game,.lose-game,.rules-container{
     position: relative;
     top: -840px;
     left: 0px;
@@ -440,7 +445,7 @@ p,a{
     transition: transform 1s;
 }
 
-.win,.lose-game-col,.win-game-col,.lose{
+.win,.lose-game-col,.win-game-col,.lose,.game-rules{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -448,7 +453,7 @@ p,a{
     text-align: center;
 }
 
-.win h2,.lose-game-col h2,.win-game-col h2,.lose h2{
+.win h2,.lose-game-col h2,.win-game-col h2,.lose h2,.game-rules h2{
     padding-bottom: 15px;
 }
 
@@ -481,7 +486,35 @@ p,a{
     top: -2090px;
 }
 
+/* Rules container */
 
+.rules-container{
+    top: -2450px;
+}
+
+.game-rules{
+    display: block;
+    text-align: start;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.game-rules h2{
+    color: #eb2a2a;
+    padding-left: 20px;
+    font-size: 1.7em;
+}
+
+.game-rules ul li{
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.game-rules p{
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+}
 
 
 
