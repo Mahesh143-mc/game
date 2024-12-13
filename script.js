@@ -2,6 +2,8 @@
 
 var StartGame = document.getElementById("start-game");
 var PlayingGame = document.getElementById("playing-game");
+var ShowRules=document.getElementById("rules-container");
+var BackRules=document.getElementById("rules-back");
 
 
 // moving the transition for palying game
@@ -16,6 +18,22 @@ document.getElementById("start-btn").addEventListener("click", () => {
 document.getElementById("go-back-start-game").addEventListener("click",()=>{
     StartGame.style.transform="translateX(0px)";
     PlayingGame.style.transform="translateX(580px)";
+});
+
+// see the rules 
+
+document.getElementById("see-rules").addEventListener("click", ()=>{
+    
+    StartGame.style.transform="translateX(-600px)";
+    ShowRules.style.transform="translateX(0)";
+});
+
+//back rules
+
+document.getElementById("rules-back").addEventListener("click", ()=>{
+    
+    StartGame.style.transform="translateX(0px)";
+    ShowRules.style.transform="translateX(600px)";
 });
 
 // player playing level and conditional
